@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "605109776504",
+    "project_id": "btcminer-e9467",
+    "storage_bucket": "btcminer-e9467.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605109776504:android:020ae06ce3fd2c09ab7d8d",
+        "android_client_info": {
+          "package_name": "com.btcminer.btcminer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCi8HiO-m0mWIbzzYZQthGwaNPBztjlHt0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

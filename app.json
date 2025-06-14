@@ -1,22 +1,36 @@
 {
   "expo": {
-    "name": "btc_miner",
+    "name": "ROBUST MINER",
     "slug": "btc_miner",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/btcminer.png",
     "scheme": "btcminer",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "updates": {
+      "enabled": false
+    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.btcminer.btcminer",
+      "googleServicesFile": "./GoogleService-Info.plist",
+      "infoPlist": {
+        "NSFaceIDUsageDescription": "This app uses Face ID to authenticate users"
+      }
     },
     "android": {
+      "package": "com.btcminer.btcminer",
+      "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/btcminer.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "permissions": [],
+      "versionCode": 1
     },
     "web": {
       "bundler": "metro",
@@ -28,15 +42,38 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/images/btcminer.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
         }
-      ]
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "enableProguardInReleaseBuilds": true,
+            "extraMavenRepos": [
+              "https://maven.google.com"
+            ]
+          },
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ],
+      ["expo-secure-store"]
     ],
     "experiments": {
-      "typedRoutes": true
-    }
+      "typedRoutes": true,
+      "tsconfigPaths": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "4df4a74e-3898-420e-8e93-fa39494f95ea"
+      }
+    },
+    "owner": "iamghost777"
   }
 }
